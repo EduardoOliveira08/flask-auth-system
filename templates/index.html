@@ -1,0 +1,111 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            height: 100vh;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 400px;
+        }
+
+        h1{
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p{
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .buttons{
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .btn{
+            padding: 12px 20px;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .login{
+            background: #4f46e5;
+        }
+
+        .login:hover{
+            background: #4338ca;
+        }
+
+        .cadastro{
+            background: #10b981;
+        }
+
+        .cadastro:hover{
+            background: #059669;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Sistema Flask</h1>
+
+        <p>
+            Sistema de autenticação com Flask e MySQL.
+        </p>
+
+        <div class="buttons">
+
+            <a href="/login">
+                <div class="btn login">
+                    Login
+                </div>
+            </a>
+
+            <a href="/cadastro">
+                <div class="btn cadastro">
+                    Cadastro
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
